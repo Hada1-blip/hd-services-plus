@@ -136,20 +136,22 @@ const styles: { [key: string]: React.CSSProperties } = {
   },
   text: { margin: 0, fontSize: "14px", color: "#333" },
   buttons: {
-    display: "flex",          // aligne les boutons sur une seule ligne
-    justifyContent: "center", // centre les boutons
-    gap: "10px",              // espace entre les boutons
-    flexWrap: "nowrap",       // force à rester sur une ligne
+    display: "flex",
+    justifyContent: "center",
+    gap: "10px",
+    flexWrap: "wrap", // SEULEMENT 2 CHANGEMENTS ICI
   },
   button: {
     color: "#fff",
     border: "none",
     borderRadius: "6px",
-    padding: "6px 12px",
+    padding: "8px 12px", // Padding ajusté
     cursor: "pointer",
     fontSize: "14px",
-    flex: 1,                  // largeur égale pour chaque bouton
-    maxWidth: "150px",        // limite la largeur maximale
+    flex: "1 1 auto", // Flexibilité améliorée
+    minWidth: "120px", // Largeur minimale
+    maxWidth: "150px",
+    textAlign: "center", // Texte centré
   },
   modalOverlay: { position: "fixed", top: 0, left: 0, width: "100vw", height: "100vh", background: "rgba(0,0,0,0.5)", display: "flex", justifyContent: "center", alignItems: "center", zIndex: 2000 },
   modal: { background: "#fff", padding: "20px", borderRadius: "8px", minWidth: "300px" },
@@ -161,4 +163,3 @@ const styles: { [key: string]: React.CSSProperties } = {
 };
 
 export default CookieConsent;
-
