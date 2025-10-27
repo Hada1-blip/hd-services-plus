@@ -53,9 +53,9 @@ const CookieConsent: React.FC = () => {
       </p>
 
       <div style={styles.buttons}>
-        <button style={{ ...styles.button, background: "#000" }} onClick={handleAcceptAll}>Tout accepter</button>
-        <button style={{ ...styles.button, background: "#007BFF" }} onClick={() => setShowModal(true)}>Personnaliser</button>
         <button style={{ ...styles.button, background: "#aaa" }} onClick={handleRejectAll}>Tout refuser</button>
+        <button style={{ ...styles.button, background: "#007BFF" }} onClick={() => setShowModal(true)}>Personnaliser</button>
+        <button style={{ ...styles.button, background: "#000" }} onClick={handleAcceptAll}>Tout accepter</button>
       </div>
 
       {showModal && (
@@ -137,9 +137,9 @@ const styles: { [key: string]: React.CSSProperties } = {
   text: { margin: 0, fontSize: "14px", color: "#333" },
   buttons: {
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "space-between",
     gap: "10px",
-    flexWrap: "wrap", // SEULEMENT 2 CHANGEMENTS ICI
+    flexWrap: "nowrap", // SEULEMENT 2 CHANGEMENTS ICI
   },
   button: {
     color: "#fff",
@@ -149,7 +149,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     cursor: "pointer",
     fontSize: "14px",
     flex: "1 1 auto", // Flexibilité améliorée
-    minWidth: "120px", // Largeur minimale
+    minWidth: "100px", // Largeur minimale
     maxWidth: "150px",
     textAlign: "center", // Texte centré
   },
