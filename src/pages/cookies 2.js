@@ -63,6 +63,7 @@ const CookieConsent: React.FC = () => {
           <div style={styles.modal}>
             <h2>Préférences de cookies</h2>
 
+            {/* Cookies nécessaires */}
             <div style={styles.cookieOption}>
               <label style={styles.switchLabel}>
                 Cookies nécessaires (obligatoires)
@@ -72,6 +73,7 @@ const CookieConsent: React.FC = () => {
               </label>
             </div>
 
+            {/* Cookies analytiques */}
             <div style={styles.cookieOption}>
               <label style={styles.switchLabel}>
                 Cookies analytiques
@@ -89,6 +91,7 @@ const CookieConsent: React.FC = () => {
               </label>
             </div>
 
+            {/* Cookies marketing */}
             <div style={styles.cookieOption}>
               <label style={styles.switchLabel}>
                 Cookies marketing
@@ -120,8 +123,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   container: {
     position: "fixed",
     bottom: "20px",
-    left: "50%",                 // centrer horizontalement
-    transform: "translateX(-50%)", // ajuste pour centrer parfaitement
+    right: "20px",
     background: "#fff",
     padding: "16px",
     borderRadius: "8px",
@@ -131,27 +133,25 @@ const styles: { [key: string]: React.CSSProperties } = {
     gap: "12px",
     zIndex: 1000,
     maxWidth: "400px",
-    width: "90%",                 // presque toute la largeur sur mobile
-    boxSizing: "border-box",      // padding inclus dans la largeur
   },
   text: { margin: 0, fontSize: "14px", color: "#333" },
   buttons: {
     display: "flex",
-    justifyContent: "space-between", // Tout refuser à gauche, Tout accepter à droite
+    justifyContent: "space-between",
     gap: "10px",
-    flexWrap: "nowrap",
+    flexWrap: "nowrap", // SEULEMENT 2 CHANGEMENTS ICI
   },
   button: {
     color: "#fff",
     border: "none",
     borderRadius: "6px",
-    padding: "8px 12px",
+    padding: "8px 12px", // Padding ajusté
     cursor: "pointer",
     fontSize: "14px",
-    flex: "1 1 auto",
-    minWidth: "100px",
+    flex: "1 1 auto", // Flexibilité améliorée
+    minWidth: "100px", // Largeur minimale
     maxWidth: "150px",
-    textAlign: "center",
+    textAlign: "center", // Texte centré
   },
   modalOverlay: { position: "fixed", top: 0, left: 0, width: "100vw", height: "100vh", background: "rgba(0,0,0,0.5)", display: "flex", justifyContent: "center", alignItems: "center", zIndex: 2000 },
   modal: { background: "#fff", padding: "20px", borderRadius: "8px", minWidth: "300px" },
