@@ -131,7 +131,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <div>
         <h3 className="font-semibold text-white mb-4 text-center ">Entreprise</h3>
         <ul className="space-y-2 text-sm text-center ">
-          <li><Link to="/">Àccueil</Link></li>
+          <li><Link to="/">Accueil</Link></li>
           <li><Link to="/about">À Propos</Link></li>
           <li><Link to="/services">Nos Services</Link></li>
           <li><Link to="/projects">Notre vision</Link></li>
