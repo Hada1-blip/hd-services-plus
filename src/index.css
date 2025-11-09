@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* HD Services - Design system for professional French service website */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+
+@layer base {
+  :root {
+    --background:210 100% 97%;
+    --foreground: 218 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 218 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 218 25% 15%;
+
+    --primary: 270 70% 50%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 270 70% 60%;
+    --primary-dark: 270 70% 40%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 218 25% 15%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8.9% 46.1%;
+
+    --accent: 270 70% 95%;
+    --accent-foreground: 270 70% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 270 70% 50%;
+
+    /* Custom design tokens for HD Services */
+    --gradient-primary: linear-gradient(135deg, hsl(270 70% 50%), hsl(270 70% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(270 70% 50%) 0%, hsl(270 70% 60%) 50%, hsl(280 70% 65%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(270 14% 98%) 100%);
+    
+    --shadow-elegant: 0 10px 30px -10px hsl(270 70% 50% / 0.3);
+    --shadow-card: 0 4px 20px hsl(270 20% 70% / 0.15);
+    --shadow-glow: 0 0 40px hsl(270 70% 60% / 0.4);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 218 25% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 218 25% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 218 25% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 270 70% 55%;
+    --primary-foreground: 218 25% 8%;
+    --primary-light: 270 70% 65%;
+    --primary-dark: 270 70% 45%;
+
+    --secondary: 218 25% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 218 25% 15%;
+    --muted-foreground: 220 8.9% 65.1%;
+
+    --accent: 218 25% 15%;
+    --accent-foreground: 270 70% 55%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 218 25% 20%;
+    --input: 218 25% 20%;
+    --ring: 270 70% 55%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(270 70% 55%), hsl(270 70% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(270 70% 55%) 0%, hsl(270 70% 65%) 50%, hsl(280 70% 70%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(218 25% 8%) 0%, hsl(218 25% 12%) 100%);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif; /* Paragraphs */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: hidden!important;
+  }
+}
