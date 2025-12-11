@@ -63,7 +63,7 @@
                   asChild
                 >
                   <Link to="/contact">
-                    Affiches Créatives
+                    Création Visuelle
                   </Link>
                 </Button>
                 <Button
@@ -72,7 +72,7 @@
                   asChild
                 >
                   <Link to="/contact">
-                    Mise en Page
+                    Marketing Digital
                   </Link>
                 </Button>
 
