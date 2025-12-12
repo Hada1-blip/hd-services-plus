@@ -17,14 +17,11 @@ const Contact = () => {
     message: ""
   });
 
-
-
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
   const contactInfo = [
-
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
@@ -44,9 +41,7 @@ const Contact = () => {
       subtitle: "50 av Champs Elysées, 75008 Paris",
       mapLink: "https://www.bing.com/maps?mepi=127%7E%7EUnknown%7EAddress_Link&ty=18&q=Kandbaz+Champs+Elys%C3%A9es&ss=ypid.YN2000x8890881143367622173&ppois=48.8703727722168_2.3068881034851074_Kandbaz+Champs+Elys%C3%A9es_YN2000x8890881143367622173%7E&cp=48.870389%7E2.306936&v=2&sV=1&FORM=MPSRPL&lvl=16.0"
     },
-
   ];
-
 
   return (
     <div>
@@ -105,7 +100,6 @@ const Contact = () => {
                   <h2 className="text-2xl font-bold text-foreground">
                     Nous Contacter
                   </h2>
-
                 </div>
                 <p className="text-xl max-w-3xl text-primary/90 mb-6">
                   Pour toute demande d'information ou de devis, contactez-nous.
@@ -115,20 +109,21 @@ const Contact = () => {
                   action="https://formspree.io/f/mjkebrey"
                   method="POST"
                   className="space-y-6">
+                  
+                  {/* Nom - Prénom */}
                   <div>
-                    <div>
-                      <Label htmlFor="nom">Nom</Label>
-                      <Input
-                        id="nom"
-                        name="Nom"
-                        placeholder="Votre nom et prénom"
-                        value={formData.nom}
-                        onChange={(e) => handleInputChange('nom', e.target.value)}
-                        required
-                      />
-                    </div>
+                    <Label htmlFor="nom-prenom">Nom - Prénom</Label>
+                    <Input
+                      id="nom-prenom"
+                      name="nom-prenom"
+                      placeholder="Nom - Prénom"
+                      value={formData.nom}
+                      onChange={(e) => handleInputChange('nom', e.target.value)}
+                      required
+                    />
                   </div>
 
+                  {/* Email */}
                   <div className="space-y-2">
                     <Label htmlFor="email">Email *</Label>
                     <Input
@@ -141,14 +136,14 @@ const Contact = () => {
                       required
                     />
                   </div>
-                 
 
+                  {/* Message */}
                   <div className="space-y-2">
                     <Label htmlFor="message">Message*</Label>
                     <Textarea
                       id="message"
-                      name="Message"
-                      placeholder="Décrivez-nous votre projet en détail : surface, délais souhaités, contraintes particulières..."
+                      name="message"
+                      placeholder="Décrivez votre projet et vos besoins :"
                       className="min-h-[120px]"
                       value={formData.message}
                       onChange={(e) => handleInputChange('message', e.target.value)}
@@ -193,7 +188,6 @@ const Contact = () => {
               variant="outline"
               size="lg"
               className="border-primary text-primary hover:bg-primary hover:text-white"
-
             >
               <Link to="/contact">Contact</Link>
             </Button>

@@ -43,13 +43,13 @@ export default function EstimateForm() {
               method="POST"
               className="space-y-6"
             >
-              {/* Nom */}
+              {/* Nom - Prénom */}
               <div>
-                <Label htmlFor="nom">Nom complet</Label>
+                <Label htmlFor="fullName">Nom - Prénom</Label>
                 <Input
-                  id="nom"
-                  name="Full Name"
-                  placeholder="Camille Moreau"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Nom - Prénom"
                   value={formData.nom}
                   onChange={(e) => handleInputChange("nom", e.target.value)}
                   required
@@ -61,9 +61,9 @@ export default function EstimateForm() {
                 <Label htmlFor="email">Email</Label>
                 <Input
                   id="email"
-                  name="Email"
+                  name="email"
                   type="email"
-                  placeholder="camille.moreau@gmail.com"
+                  placeholder="votre@email.com"
                   value={formData.email}
                   onChange={(e) => handleInputChange("email", e.target.value)}
                   required
@@ -75,7 +75,7 @@ export default function EstimateForm() {
                 <Label htmlFor="telephone">Téléphone</Label>
                 <Input
                   id="telephone"
-                  name="Phone"
+                  name="telephone"
                   placeholder="06 12 34 56 78"
                   value={formData.telephone}
                   onChange={(e) => handleInputChange("telephone", e.target.value)}
@@ -87,7 +87,7 @@ export default function EstimateForm() {
                 <Label htmlFor="objet">Objet de la demande</Label>
                 <select
                   id="objet"
-                  name="Purpose"
+                  name="objet"
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none"
                   value={formData.objet}
                   onChange={(e) => handleInputChange("objet", e.target.value)}
@@ -110,7 +110,7 @@ export default function EstimateForm() {
                 <Label htmlFor="message">Message</Label>
                 <Textarea
                   id="message"
-                  name="Message"
+                  name="message"
                   placeholder="Décrivez votre projet et vos besoins :"
                   className="min-h-[120px]"
                   value={formData.message}
