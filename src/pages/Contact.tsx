@@ -179,8 +179,7 @@ const Contact = () => {
               Demandez votre devis personnalisé
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl">
-              Basés à Boulogne-Billancourt, nous intervenons dans un rayon de 50km
-              pour tous vos projets de construction et rénovation.
+              Nous accompagnons nos clients partout pour tous leurs projets numériques et créatifs.
             </p>
           </div>
 

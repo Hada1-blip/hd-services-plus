@@ -123,7 +123,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <span className="text-lg font-bold text-white self-center">HD Services</span>
         </div>
         <p className="text-white text-sm">
-          Votre partenaire de confiance pour tous vos projets de rénovation et de construction.
+          Votre partenaire de confiance pour des solutions sur mesure.
         </p>
       </div>
 
