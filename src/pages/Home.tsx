@@ -37,7 +37,6 @@
       <div className="overflow-x-hidden">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-gradient-hero py-20 lg:py-32">
-          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
           <div className="relative container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center text-white">
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
