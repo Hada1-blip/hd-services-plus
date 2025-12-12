@@ -111,7 +111,7 @@ export default function EstimateForm() {
                 <Textarea
                   id="message"
                   name="Message"
-                  placeholder="Décrivez votre projet et vos besoins"
+                  placeholder="Décrivez votre projet et vos besoins :"
                   className="min-h-[120px]"
                   value={formData.message}
                   onChange={(e) => handleInputChange("message", e.target.value)}
