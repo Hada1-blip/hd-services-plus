@@ -143,7 +143,7 @@ const Contact = () => {
                     <Textarea
                       id="message"
                       name="message"
-                      placeholder="Décrivez votre projet et vos besoins :"
+                      placeholder="Vos questions ou demandes :"
                       className="min-h-[120px]"
                       value={formData.message}
                       onChange={(e) => handleInputChange('message', e.target.value)}
