@@ -94,7 +94,7 @@
 
               </p>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Nos outils et méthodes sont pensés pour attirer plus de clients, fidéliser vos contacts et vous faire gagner du temps, tout en reflétant l’image professionnelle de votre entreprise.
+                Nos outils et méthodes sont pensés pour attirer plus de clients, fidéliser vos contacts et vous faire gagner du temps, tout en reflétant l’image professionnelle de votre entreprise. 
               </p>
               <Button
                 size="lg"
